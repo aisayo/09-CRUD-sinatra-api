@@ -16,20 +16,5 @@ class StarshipsController < ApplicationController
         starship.to_json
     end 
 
-    # read action / show: showing 1 resource details 
-
-    get '/starships/:id/:query' do 
-        # find the starship with the given id 
-        # respond with json format of that object
-        starship = Starship.find(params[:id])
-        starship.to_json
-    end 
-
-    patch '/starships/:id' do 
-        binding.pry
-        starship = Starship.find(params[:id])
-        starship.update(params)
-        starship.to_json
-    end 
 
 end 
