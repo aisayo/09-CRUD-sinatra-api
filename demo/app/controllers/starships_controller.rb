@@ -18,7 +18,7 @@ class StarshipsController < ApplicationController
 
     # read action / show: showing 1 resource details 
 
-    get '/starships/:id/:query' do 
+    get '/starships/:id' do 
         # find the starship with the given id 
         # respond with json format of that object
         starship = Starship.find(params[:id])
@@ -26,10 +26,14 @@ class StarshipsController < ApplicationController
     end 
 
     patch '/starships/:id' do 
-        binding.pry
         starship = Starship.find(params[:id])
         starship.update(params)
         starship.to_json
+    end 
+
+    delete '/starships/:id' do 
+        starship = Starship.find(params[:id])
+        starship.destroy
     end 
 
 end 

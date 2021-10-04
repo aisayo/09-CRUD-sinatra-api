@@ -75,6 +75,16 @@ function StarshipsContainer() {
   }
 
 
+// if a delete button has been clicked, the following event handler will get invoked
+
+  const deleteStarship = (starshipId) => {
+
+    fetch(`http://localhost:9292/starships/${starshipId}`, {
+      method: 'DELETE'
+    })
+  }
+
+
   debugger;
 
   return (
