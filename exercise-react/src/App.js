@@ -1,9 +1,9 @@
-import StarshipsContainer from "./StarshipsContainer";
+import PizzasContainer from "./PizzasContainer";
 
 function App() {
   return (
     <div className="App">
-      <StarshipsContainer />
+      <PizzasContainer />
     </div>
   );
 }

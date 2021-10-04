@@ -31,6 +31,20 @@
 | HTTP Verb | Endpoint  | Action  |
 | :---:   | :-: | :-: |
 | GET | /starships | Index |
+| GET | /starships/:id | Show |
 | POST | /starships | Create |
 | PATCH | /starships/:id | Update |
 | DELETE | /starships/:id | Destroy |
+
+### Lecture Deliverables:
+
+- To follow along with today's lecture, we will be working in 2 different repo's and terminals.
+- CD into 'demo' and start the server by running `bundle exec rake server`. The routes will be defined in `StarshipController`.
+- Then open a new terminal, CD back into the root directory and then cd into `demo react` and run `npm start` to start the React server. 
+- Today we will communicate via a very simple React project to make requests to our API and receive responses that will be used in the application. 
+
+### Breakout Exercise:
+
+1. For this exercise, cd into both `exercise` and `exercise-react` in two separate terminals.
+2. In `exercise-react`, run `npm start` to run the React server. 
+3. We will be using the `PizzasContainer` to complete the full CRUD cycle of this application. Do not worry about building other components. We will keep this application really simple and focus on the requests sent from React to our API.
